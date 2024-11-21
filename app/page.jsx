@@ -1,7 +1,9 @@
+import { FiDownload } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import Social from "@/components/Social";
-import { FiDownload } from "react-icons/fi";
 import Photo from "@/components/Photo";
+import Stats from "@/components/Stats";
+import Services from "./services/page";
 
 const Home = () => {
   return (
@@ -9,17 +11,18 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1">
-              Hello I'm
+              Hello I&apos;m
               <br />
               <span className="text-accent">Kaushal Rai</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I'm a passionate software developer with a strong background in
-              computer science and a love for technology. I can help you build
-              your next project with expertise and creativity.
+              {/* photo */}
+              I&apos;m a passionate software developer with a strong background
+              in computer science and a love for technology. I can help you
+              build your next project with expertise and creativity.
             </p>
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -43,11 +46,13 @@ const Home = () => {
             </div>
           </div>
           {/* photo */}
-          <div>
+          <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
           </div>
         </div>
       </div>
+      <Stats />
+      <Services />
     </section>
   );
 };

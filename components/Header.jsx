@@ -14,10 +14,13 @@ const Header = () => {
             Kaushal<span className="text-accent">.</span>
           </h1>
         </Link>
-
-        {/* desktop nav & hire me button*/}
-        <div className="hidden xl:flex items-center gap-8">
+        {/* desktop nav */}
+        <div className="hidden xl:flex items-center gap-8 xl">
           <Nav />
+        </div>
+
+        {/* hire me button*/}
+        <div className="hidden xl:flex ">
           <Link href="/contact">
             <Button>Hire me</Button>
           </Link>
