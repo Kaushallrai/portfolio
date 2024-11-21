@@ -15,7 +15,7 @@ const buttonVariants = cva(
           "border border-accent  bg-transparent text-accent  hover:bg-accent  hover:text-primary",
       },
       size: {
-        default: "h-[44px] px-6",
+        default: "h-[36px] px-6",
         md: "h-[48px] px-6",
         lg: "h-[56px] px-8",
       },
