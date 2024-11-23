@@ -86,7 +86,7 @@ const education = {
     "lorem ipsum dolor sit amet, consectetur adip incididunt ut labore et dolore magna aliqu",
   items: [
     {
-      institute: "Herald College Kathmand",
+      institute: "Herald College Kathmandu",
       degree: "Computer Science",
       duration: "2022-2024",
     },
@@ -167,7 +167,7 @@ const Resume = () => {
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-48 pb-14">
         <Tabs
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
