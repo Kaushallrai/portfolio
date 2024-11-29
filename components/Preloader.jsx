@@ -10,7 +10,7 @@ const Preloader = () => {
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
         if (prevProgress < 100) {
-          return prevProgress + Math.random() * 10; // Increase random increment for faster progress
+          return prevProgress + Math.random() * 9; // Increase random increment for faster progress
         } else {
           clearInterval(timer);
           setIsLoadingComplete(true); // Set loading to complete once progress reaches 100
@@ -31,13 +31,13 @@ const Preloader = () => {
     >
       <div className="w-1/2 max-w-lg p-4 bg-white ">
         <motion.div
-          className="h-2 bg-gray-300 rounded-full"
+          className="h-2 bg-accent rounded-full"
           style={{ width: `${progress}%` }}
           initial={{ width: "0%" }}
           animate={{ width: `${progress}%` }}
-          transition={{ type: "spring", stiffness: 300, damping: 25 }} // Faster spring transition
+          transition={{ type: "spring", stiffness: 200, damping: 15 }} // Faster spring transition
         />
-        <div className="mt-2 text-center text-gray-700 font-semibold">
+        <div className="mt-2 text-center text-accent font-semibold ">
           {Math.round(progress)}%
         </div>
       </div>
